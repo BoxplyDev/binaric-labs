@@ -20,7 +20,7 @@ import {
 
 type TimelineItem = {
   step: number;
-  icon: React.ElementType;
+  icon: React.FC<{ className?: string }>;
   title: string;
   subtitle: string;
   description: string;
