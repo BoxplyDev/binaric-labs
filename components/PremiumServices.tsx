@@ -16,7 +16,7 @@ function ServiceRow({
   inView,
 }: {
   index: number;
-  icon: React.ElementType;
+  icon: React.FC<{ className?: string }>;
   title: string;
   description: string;
   tag: string;
