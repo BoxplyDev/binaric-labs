@@ -264,7 +264,7 @@ function InteractiveWordmark({ explodeRef }: { explodeRef: React.MutableRefObjec
 }
 
 // ─── Link ─────────────────────────────────────────────────────────────────────
-function FooterLink({ label, href, icon: Icon, delay }: { label: string; href: string; icon?: React.ElementType; delay: number }) {
+function FooterLink({ label, href, icon: Icon, delay }: { label: string; href: string; icon?: React.FC<{ className?: string }>; delay: number }) {
   const [hov, setHov] = useState(false);
   return (
     <motion.a
