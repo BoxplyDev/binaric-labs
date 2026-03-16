@@ -167,7 +167,7 @@ export default function ProcessPillars() {
     offset: ['start start', 'end end'],
   });
 
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
+  const { ref, inView } = useInView({ threshold: 0.05, triggerOnce: false });
 
   // FIX 1: removed [0.95, 1] → [1, 0.3] fade-out — that was making the CTA
   // disappear as you scrolled to the bottom of the section.
