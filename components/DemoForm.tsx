@@ -198,7 +198,7 @@ Looking forward to connecting.
 
       {/* Fields */}
       <div className="space-y-8 mb-10">
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           <Field label="FIRST NAME" name="firstName" placeholder="Alex"
             value={formData.firstName} error={errors.firstName} touched={touched.firstName}
             onChange={handleChange} onBlur={handleBlur} required />

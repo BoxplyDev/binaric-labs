@@ -68,7 +68,7 @@ export default function DemoPage() {
       </div>
 
       {/* ── Page content ── */}
-      <main ref={containerRef} className="relative z-10 min-h-screen pt-32 pb-32">
+      <main ref={containerRef} className="relative z-10 min-h-screen pt-24 sm:pt-32 pb-16 sm:pb-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* ── Section eyebrow ── */}

@@ -36,7 +36,7 @@ export default function HeroSection() {
   const parallax = useMouseParallax(18);
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black mt-15">
+    <section className="relative min-h-screen overflow-hidden bg-black mt-14 md:mt-16">
 
       {/* ── Black hole canvas ── */}
       <div className="absolute inset-0 z-0">
@@ -55,7 +55,7 @@ export default function HeroSection() {
       />
 
       {/* ── Content ── */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-16">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-6 md:pt-16">
 
         {/* Mouse-parallax wrapper — moves slightly opposite to cursor */}
         <motion.div
@@ -71,7 +71,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-center gap-4 mb-10"
+            className="flex items-center gap-4 mb-6 md:mb-10"
           >
             <div className="h-px w-8 bg-white/20" />
             <span className="text-white/35 text-[10px] tracking-[0.45em]">BINARIC LABS</span>
@@ -113,7 +113,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center mb-14"
+            className="text-center mb-10 md:mb-14"
           >
             <div className="text-base sm:text-lg text-white/35 h-7 flex items-center justify-center tracking-[0.18em] font-light">
               <TypeAnimation
@@ -138,7 +138,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0, ease: 'easeOut' }}
-            className="flex justify-center mb-20"
+            className="flex justify-center mb-14 md:mb-20"
           >
             <motion.button
               whileHover="hover"

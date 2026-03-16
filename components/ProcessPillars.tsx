@@ -92,7 +92,7 @@ function TimelineCard({ item, isLast }: { item: TimelineItem; isLast: boolean })
         </motion.span>
       </div>
 
-      <div className="pb-20 md:pb-28 pl-6 md:pl-10">
+      <div className="pb-14 md:pb-24 pl-6 md:pl-10">
         <motion.div
           animate={{ x: hovered ? 5 : 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 24 }}
@@ -310,14 +310,14 @@ export default function ProcessPillars() {
               <motion.p
                 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="text-white/40 text-lg max-w-2xl mt-12 mx-auto text-center font-light"
+                className="text-white/40 text-base md:text-lg max-w-2xl mt-8 md:mt-12 mx-auto text-center font-light"
               >
                 Precision-engineered methodology designed for digital escape velocity and sustained orbital presence.
               </motion.p>
             </div>
 
             {/* Timeline */}
-            <div className="mb-48">
+            <div className="mb-36 md:mb-48">
               {timeline.map((item, i) => (
                 <motion.div
                   key={item.step}
@@ -332,7 +332,7 @@ export default function ProcessPillars() {
             </div>
 
             {/* Core Pillars */}
-            <div className="mb-48">
+            <div className="mb-28 md:mb-48">
               <div className="mb-20">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -363,7 +363,7 @@ export default function ProcessPillars() {
                       transition={{ duration: 0.75, delay: pillar.delay, ease: [0.22, 1, 0.36, 1] }}
                       onMouseEnter={() => setHoveredPillar(pillar.id)}
                       onMouseLeave={() => setHoveredPillar(null)}
-                      className="relative bg-black p-8 overflow-hidden group cursor-default"
+                      className="relative bg-black p-6 md:p-8 overflow-hidden group cursor-default"
                     >
                       <motion.div
                         className="absolute inset-0 pointer-events-none"
@@ -435,7 +435,7 @@ export default function ProcessPillars() {
                     initial={{ scaleX: 0, opacity: 0 }}
                     variants={{ hover: { scaleX: 1, opacity: 1, transition: { duration: 0.35, ease: 'easeOut' } } }}
                   />
-                  <div className="relative flex items-center gap-8">
+                  <div className="relative flex items-center gap-4 md:gap-8">
                     <span className="text-white/80 tracking-[0.25em] text-xs uppercase font-light">
                       Begin Your Journey
                     </span>

@@ -231,7 +231,7 @@ export default function PremiumServices() {
           <motion.div style={{ opacity, scale, y }} className="max-w-6xl mx-auto">
 
             {/* ── Section header — mirrors PremiumAbout exactly ── */}
-            <div className="mb-24 md:mb-32">
+            <div className="mb-16 md:mb-24">
               <motion.span
                 initial={{ opacity: 0, y: 10 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -271,14 +271,14 @@ export default function PremiumServices() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.9, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  className="text-2xl sm:text-3xl md:text-4xl font-light leading-[1.25] text-white/80 mb-16"
+                  className="text-2xl sm:text-3xl md:text-4xl font-light leading-[1.25] text-white/80 mb-10 md:mb-16"
                 >
                   Every service is a{' '}
                   <span className="text-white/40 italic">precision instrument</span>
                   {' '}engineered for orbital alignment.
                 </motion.p>
 
-                <div className="grid grid-cols-3 gap-6 mb-16">
+                <div className="grid grid-cols-3 gap-3 md:gap-6 mb-10 md:mb-16">
                   {stats.map((s, i) => (
                     <StatItem key={i} {...s} delay={0.55 + i * 0.1} inView={inView} />
                   ))}
